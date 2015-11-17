@@ -10,4 +10,5 @@ install:
 - mvn package -DskipTests=true -Dmaven.javadoc.skip=true -B -V -Pmock
 - sudo chmod a+rwx ./target/mock-server-jar-with-dependencies.jar
 - java -jar ./target/mock-server-jar-with-dependencies.jar > ./target/mock-server.log 2>&1 &
+- cat ./target/mock-server.log
 - netstat -ano
