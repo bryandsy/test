@@ -12,7 +12,9 @@ install:
 
 - mvn package -DskipTests=true -Dmaven.javadoc.skip=true -B -V -Pmock
 - sudo chmod a+rwx ./target/*
-- supervisord -c ./conf/supervisord.conf
+- sudo whereis supervrisord.conf
+- sudo cp ./conf/supervisord.conf /etc/supervisord/
+- supervisord
 #- java -jar ./target/mock-server-jar-with-dependencies.jar
 - ls -alR ./target/*
 - ps -ef | grep java
