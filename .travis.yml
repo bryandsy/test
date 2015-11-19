@@ -7,8 +7,8 @@ services:
 - docker-compose
 
 install:
-- apt-get update
-- apt-get install -y supervisord
+- sudo apt-get update
+- sudo apt-get install -y supervisord
 - supervisord
 - mvn package -DskipTests=true -Dmaven.javadoc.skip=true -B -V -Pmock
 - sudo chmod a+rwx ./target/*
