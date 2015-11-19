@@ -24,4 +24,4 @@ install:
 - ls -alR ./target/*
 - ps -ef | grep java
 - cat ./target/mock-server.log
-- netstat -ano
+- netstat -ano | grep 19999
