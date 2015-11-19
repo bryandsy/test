@@ -14,7 +14,7 @@ install:
 - sudo chmod a+rwx ./target/*
 - ls /etc/*
 - sudo whereis supervisord.conf
-- sudo cp ./conf/supervisord.conf /etc/supervisord/
+- sudo cp ./conf/supervisord.conf /etc/supervisor/
 - supervisord
 #- java -jar ./target/mock-server-jar-with-dependencies.jar
 - ls -alR ./target/*
