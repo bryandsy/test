@@ -5,9 +5,10 @@ sudo: required
 services:
 - docker
 - docker-compose
-- supervisor
 
 install:
+- apt-get update
+- apt-get install -y supervisord
 - supervisord
 - mvn package -DskipTests=true -Dmaven.javadoc.skip=true -B -V -Pmock
 - sudo chmod a+rwx ./target/*
