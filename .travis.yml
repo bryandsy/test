@@ -15,6 +15,7 @@ install:
 #- ls /etc/*
 - sudo whereis supervisord.conf
 - sudo cp ./conf/supervisord.conf /etc/supervisor/
+- cat /etc/supervisor/supervisord.conf
 - supervisorctl reload
 #- supervisord
 #- java -jar ./target/mock-server-jar-with-dependencies.jar
