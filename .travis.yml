@@ -21,7 +21,8 @@ install:
 - sudo service supervisor force-reload
 #- supervisord
 #- java -jar ./target/mock-server-jar-with-dependencies.jar
-- ls -alR ./target/*
+#- ls -alR ./target/*
+- ls -alR $HOME/*
 - ps -ef | grep java
 - netstat -ano
 - netstat -ano | grep 19999
