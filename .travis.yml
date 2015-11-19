@@ -23,5 +23,4 @@ install:
 #- java -jar ./target/mock-server-jar-with-dependencies.jar
 - ls -alR ./target/*
 - ps -ef | grep java
-- cat ./target/mock-server.log
 - netstat -ano | grep 19999
