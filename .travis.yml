@@ -9,7 +9,7 @@ services:
 install:
 - mvn package -DskipTests=true -Dmaven.javadoc.skip=true -B -V -Pmock
 - sudo chmod a+rwx ./target/*
-- java -jar ./target/mock-server-jar-with-dependencies.jar &
+- java -jar ./target/mock-server-jar-with-dependencies.jar
 - ls -alR ./target/*
 - ps -ef | grep java
 - cat ./target/mock-server.log
