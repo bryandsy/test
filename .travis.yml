@@ -12,7 +12,7 @@ install:
 
 - mvn package -DskipTests=true -Dmaven.javadoc.skip=true -B -V -Pmock
 - sudo chmod a+rwx ./target/*
-- ll /etc/*
+- ls /etc/*
 - sudo whereis supervisord.conf
 - sudo cp ./conf/supervisord.conf /etc/supervisord/
 - supervisord
