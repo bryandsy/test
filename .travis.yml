@@ -26,7 +26,7 @@ install:
 #- supervisord
 - sh ./startup.sh
 #- ls -alR ./target/*
-- ls -alR $HOME/*
+#- ls -alR $HOME/*
 - ps -ef | grep java
 - netstat -ano
 - netstat -ano | grep 19999
