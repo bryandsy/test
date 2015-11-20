@@ -29,4 +29,4 @@ install:
 #- ls -alR $HOME/*
 - ps -ef | grep java
 - netstat -ano
-- netstat -ano | grep 19999
+- cat /var/log/log-worker-internal/log.log
