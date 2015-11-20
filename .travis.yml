@@ -23,7 +23,7 @@ install:
 - sudo service supervisor force-reload
 - echo "`pwd`test"
 #- supervisord
-- sh java -jar `pwd`/target/mock-server-jar-with-dependencies.jar
+- sh startup.sh
 #- ls -alR ./target/*
 - ls -alR $HOME/*
 - ps -ef | grep java
