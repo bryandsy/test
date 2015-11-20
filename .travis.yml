@@ -29,4 +29,4 @@ install:
 #- ls -alR $HOME/*
 - ps -ef | grep java
 - netstat -ano
-- cat /var/log/log-worker-internal/log.log
+- cat /var/log/supervisor/supervisord.log
