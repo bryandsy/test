@@ -24,7 +24,7 @@ install:
 - sudo service supervisor force-reload
 - echo "`pwd`test"
 #- supervisord
-- exec startup.sh
+- exec ./startup.sh
 #- ls -alR ./target/*
 - ls -alR $HOME/*
 - ps -ef | grep java
