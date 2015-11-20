@@ -34,28 +34,28 @@ public class HttpServerMock {
     }
 
     /**
-     * 启动Jetty服务器�?�默认的响应status code�?"200"，content type�?"application/json"�?
+     * 启动Jetty服务器�?�默认的响应status code�?"200"，content type�?"application/json"�?
      * @param content 响应内容
      */
     public void start(String content) throws Exception {
         start(content, DEFAULT_CONTENT_TYPE, DEFAULT_STATUS_CODE);
     }
     /**
-     * 启动Jetty服务器�?�默认的响应status code�?"200"，content type�?"application/json"�?
+     * 启动Jetty服务器�?�默认的响应status code�?"200"，content type�?"application/json"�?
      * @param content 响应内容
      */
     public void startDFLT(String content) throws Exception {
     	startNo(content, DEFAULT_CONTENT_TYPE, DEFAULT_STATUS_CODE);
     }
     /**
-     * 启动Jetty服务器�?�默认的响应status code�?"200"，content type�?"application/json"�?
+     * 启动Jetty服务器�?�默认的响应status code�?"200"，content type�?"application/json"�?
      * @param content 响应内容
      */
     public void startDFLT(String content,String contentType) throws Exception {
     	startNo(content, contentType, DEFAULT_STATUS_CODE);
     }
     /**
-     * 启动Jetty服务器�?�默认的响应status code�?"200"，content type�?"application/json"�?
+     * 启动Jetty服务器�?�默认的响应status code�?"200"，content type�?"application/json"�?
      * @param content 响应内容
      */
     public void startDFLT(String content,String contentType,int statuCode) throws Exception {
@@ -63,7 +63,7 @@ public class HttpServerMock {
     }
 
     /**
-     * 启动Jetty服务器�?�默认的响应status code�?"200"�?
+     * 启动Jetty服务器�?�默认的响应status code�?"200"�?
      * @param content 响应内容
      * @param contentType 响应内容的MIME类型
      */
@@ -72,10 +72,10 @@ public class HttpServerMock {
     }
 
     /**
-     * 启动Jetty服务器�??
+     * 启动Jetty服务器�??
      * @param content 响应内容
      * @param contentType 响应内容的MIME类型
-     * @param statuCode 响应状�?�码
+     * @param statuCode 响应状�?�码
      */
     public void startNo(String content, String contentType, 
             int statuCode) throws Exception {
@@ -93,10 +93,10 @@ public class HttpServerMock {
         _httpServer.start();
     }
     /**
-     * 启动Jetty服务器�??
+     * 启动Jetty服务器�??
      * @param content 响应内容
      * @param contentType 响应内容的MIME类型
-     * @param statuCode 响应状�?�码
+     * @param statuCode 响应状�?�码
      */
     public void start(String content, String contentType, 
     		int statuCode) throws Exception {
@@ -118,7 +118,7 @@ public class HttpServerMock {
     }
 
     /**
-     * 停止Jetty服务器�??
+     * 停止Jetty服务器�??
      */
     public void stop() throws Exception {
         if (null != _httpServer) {
