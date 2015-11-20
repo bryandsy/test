@@ -16,15 +16,15 @@ install:
 - sudo chmod a+rwx ./target/*
 - sudo chmod a+rwx ./startup.sh
 #- ls /etc/*
-- sudo whereis supervisord.conf
-- sudo cp ./conf/supervisord.conf /etc/supervisor/
-- cat /etc/supervisor/supervisord.conf
-- supervisorctl -h
-- supervisord -h
-- sudo service supervisor force-reload
-- echo "`pwd`test"
-#- supervisord
-- sh ./startup.sh
+#- sudo whereis supervisord.conf
+#- sudo cp ./conf/supervisord.conf /etc/supervisor/
+#- cat /etc/supervisor/supervisord.conf
+#- supervisorctl -h
+#- supervisord -h
+#- sudo service supervisor force-reload
+#- echo "`pwd`test"
+- supervisord -c ./conf/supervisord.conf
+#- sh ./startup.sh
 #- ls -alR ./target/*
 #- ls -alR $HOME/*
 - ps -ef | grep java
