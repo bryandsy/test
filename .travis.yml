@@ -5,6 +5,8 @@ sudo: required
 services:
 - docker
 - docker-compose
+os:
+- linux
 
 install:
 - sudo apt-get update
