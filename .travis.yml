@@ -32,3 +32,4 @@ install:
 - cat /var/log/supervisor/supervisord.log
 - for i in $(seq 60);do curl -I 127.0.0.1:19088|grep "200 OK"; if
   [ $? -eq 0 ]; then echo "connect server success"; break; elif [ $i -eq 60 ]; then
+  echo "connect server timeout";exit 1; fi; sleep 1; done;
